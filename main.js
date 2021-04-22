@@ -22,18 +22,20 @@ function timer(seconds) {
     }, 1000)
 }
 
+
 function displayTimeLeft(seconds) {
     // displays remaining time
     const days = Math.floor(seconds / 3600 / 24);
     const remainderHours = (Math.floor(seconds / 3600)) % 24;
     const remainderMinutes = (Math.floor(seconds / 60)) % 60;
     const remainderSeconds = seconds % 60;
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hours').innerHTML = remainderHours;
-    document.getElementById('minutes').innerHTML = remainderMinutes;
-    document.getElementById('seconds').innerHTML = remainderSeconds;
+
+    // padstart makes numbers with length 2
+    document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+    document.getElementById('hours').innerHTML = remainderHours.toString().padStart(2, '0');
+    document.getElementById('minutes').innerHTML = remainderMinutes.toString().padStart(2, '0');
+    document.getElementById('seconds').innerHTML = remainderSeconds.toString().padStart(2, '0');
     // console.log({remainderMinutes, remainderSeconds, remainderHours, days});
 }
 
 timer(secondsToDate)
-

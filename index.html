@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Launch countdown timer</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>We're launching soon</h1>
-  <div class="container-timer" id="timer">
-    <div class="days" id="days"></div>
-    <div class="hours" id="hours"></div>
-    <div class="minutes" id="minutes"></div>
-    <div class="seconds" id="seconds"></div>
+  <div class="container">
+    <h1>We're launching soon</h1>
+    <div class="container-timer" id="timer">
+      <span class="days" id="days"></span>
+      <span class="hours" id="hours"></span>
+      <span class="minutes" id="minutes"></span>
+      <span class="seconds" id="seconds"></span>
+      <p>Days</p>
+      <p>Hours</p>
+      <p>Minutes</p>
+      <p>Seconds</p>
+    </div>
+  
+    <footer class="footer">
+      <img class="img-hills" src="images/pattern-hills.svg" alt="">
+      <div class="icons">
+        <a class="icon-link" href="#"><img src="images/icon-facebook.svg" alt=""></a>
+        <a class="icon-link" href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+        <a class="icon-link" href="#"><img src="images/icon-instagram.svg" alt=""></a>
+      </div>
+    </footer>  
   </div>
 
-  Days
-  Hours
-  Minutes
-  Seconds
-  
+
   <script src="main.js"></script>
 </body>
 </html>

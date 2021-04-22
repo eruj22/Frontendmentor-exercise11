@@ -1,0 +1,76 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* primary color */
+    --clr-gray-blue: hsl(237, 18%, 59%);
+    --clr-red: hsl(345, 95%, 68%);
+    /* neutral color */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-desa-blue: hsl(236, 21%, 26%);
+    --clr-dark-blue: hsl(235, 16%, 14%);
+    --clr-dark: hsl(234, 17%, 12%);
+
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-gray-blue);
+}
+
+h1,
+p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 5rem;
+    color: var(--clr-white);
+    font-size: 30px;
+}
+
+.img-hills {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container-timer {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+span {
+    color: var(--clr-red);
+    font-size: 60px;
+    background-color: var(--clr-desa-blue);
+    margin: 1rem .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    left: calc(50% - 71px);
+}
+
+.icon-link + .icon-link {
+    margin-left: 2rem;
+}
