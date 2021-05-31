@@ -1,5 +1,8 @@
 # Frontend Mentor - Launch countdown timer
 
+I had fun making this project. I followed the design, used Google to help set up the logic. The design isn't the same as is required for this project from Fronteendmentor, but I added a little bit of myself into it. <br>
+You can see project <a href="https://fervent-williams-6069f3.netlify.app">live on this link</a>.
+
 ![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
