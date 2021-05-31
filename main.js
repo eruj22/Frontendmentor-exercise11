@@ -1,5 +1,5 @@
 // set date to countdown to in ms
-let d = '2021, 5, 1';
+let d = '2021, 12, 31';
 let start = new Date(d).getTime();
 // time in seconds from target time till now
 let secondsToDate = (start - Date.now()) / 1000;
